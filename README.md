@@ -1,8 +1,10 @@
 # platformio.ini Templates
-### For programming ATtinyX4/X5 MCUs via Arduino 
+### For programming ATtinyX4/X5 MCUs via Arduino ISP
 
 Quickstart ini templates for ATtinyX4/X5-based [platform.io](https://platformio.org/) electronics projects, that are programmed via an Arduino UNO.
 This guide assumes you're using VSCode on Windows.
+
+## Troubleshooting
 
 Some things to check if your uploads don't work:
 - Ensure the Arduino is properly set up (see: [Instructables guide](https://www.instructables.com/How-to-Program-an-Attiny85-From-an-Arduino-Uno/), [Github gist](https://gist.github.com/ij96/804e731bd31dbb95b2b043e93c79ceab), [PlatformIO guide](https://docs.platformio.org/en/latest/platforms/atmelavr.html))
@@ -14,3 +16,11 @@ Some things to check if your uploads don't work:
 - If you haven't, add a small polarized capacitor (eg 10uF) from your Arduino programmer to GND
 - In weird circumstances, I've seen PIO bugs go away by using PlatformIO Extension > Project Tasks > Miscellaneous > Rebuild Intellisense Index
 - Turn it off and on again :)
+
+## Resources
+
+Some useful links :)
+- Datasheets for [ATtinyX4](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7701_Automotive-Microcontrollers-ATtiny24-44-84_Datasheet.pdf) and [ATtinyX5](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)
+- [AVR Fuse Calculator](https://www.engbedded.com/fusecalc/), and [All You Need To Know About AVR Fuses](https://embedds.com/all-you-need-to-know-about-avr-fuses/)
+- [ATtiny pinout diagrams](https://github.com/SpenceKonde/ATTinyCore#attiny254585) (and the whole Arduino core repo) by [@SpenceKonde](https://github.com/SpenceKonde/)
+- [AVR MCU Sleep Modes and Sleep Controller](https://onlinedocs.microchip.com/oxy/GUID-A834D554-5741-41A3-B5E1-35ED7CD8250A-en-US-5/GUID-35CAFA19-CA93-4B3E-AEE3-481B8542FE94.html)
