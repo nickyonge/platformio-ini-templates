@@ -13,7 +13,7 @@ Some things to check if your uploads don't work:
 - Set the fuses on your chip
   - If you're 100% sure your chip is good, and the device isn't recognized, it's possible the reset pin has been disabled. In that case, [it'll need to be reset](https://www.hackster.io/sbinder/attiny85-powered-high-voltage-avr-programmer-3324e1).
   - If you're using a custom fuse build environment, ensure the `lib_deps` and `board_fuses` in platformio.ini match your board environment
-- If you suspect your project is exceeding your chip's memory size, in `platformio.ini`, set `build_type = debug` to enable size debugging, and `debug_build_flags = -Os` to minimize debug build filesize (which otherwise would be significantly larger than the `release` build type)
+- If you suspect your project is exceeding your chip's memory size, in `platformio.ini`, set [build config type](https://docs.platformio.org/en/stable/projectconf/build_configurations.html#build-configurations) to `build_type = debug` to enable size debugging, and [debug flag](https://docs.platformio.org/en/stable/projectconf/sections/env/options/debug/debug_build_flags.html) `debug_build_flags = -Os` to minimize debug build filesize (which otherwise would be significantly larger than the `release` build type)
 - If you haven't, add a small polarized capacitor (eg 10uF) from your Arduino programmer to GND
 - In weird circumstances, I've seen PIO bugs go away by using PlatformIO Extension > Project Tasks > Miscellaneous > Rebuild Intellisense Index
 - Turn it off and on again :)
