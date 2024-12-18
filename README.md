@@ -25,3 +25,7 @@ Some useful links :)
 - [AVR Fuse Calculator](https://www.engbedded.com/fusecalc/), and [All You Need To Know About AVR Fuses](https://embedds.com/all-you-need-to-know-about-avr-fuses/)
 - [ATtiny pinout diagrams](https://github.com/SpenceKonde/ATTinyCore#attiny254585) (and the whole Arduino core repo) by [@SpenceKonde](https://github.com/SpenceKonde/)
 - [AVR MCU Sleep Modes and Sleep Controller](https://onlinedocs.microchip.com/oxy/GUID-A834D554-5741-41A3-B5E1-35ED7CD8250A-en-US-5/GUID-35CAFA19-CA93-4B3E-AEE3-481B8542FE94.html)
+
+##
+
+<img src="assets/programmer.jpg" title="My Arduino UNO-based ATtinyX4/X5 programmer" width="400px">
